@@ -74,8 +74,6 @@ Vagrant.configure("2") do |config|
       sleep 10
       sudo sh /home/vagrant/shell/sfVhost.sh 'jobeet'
       sudo /etc/init.d/apache2 restart
-      mysql -u root -p123 << EOF
-      CREATE DATABASE IF NOT EXISTS jobeet;
-EOF
+      sudo mysql -u root -p123 -e "CREATE DATABASE IF NOT EXISTS jobeet;"
   SHELL
 end
