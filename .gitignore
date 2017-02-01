@@ -7,11 +7,6 @@ web/uploads/
 
 # Assets managed by Bower
 lib/vendor
-web/assets/vendor/
-
-# PHPUnit
-app/phpunit.xml
-phpunit.xml
 
 # Build data
 .vagrant
@@ -23,7 +18,4 @@ phpunit.xml
 .idea/vcs.xml
 .idea/workspace.xml
 apps/frontend/i18n/
-apps/frontend/modules/
-plugins/
-!/web/js/
-!/web/images/
+
