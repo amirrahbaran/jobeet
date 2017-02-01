@@ -39,7 +39,7 @@ Vagrant.configure("2") do |config|
   # the path on the guest to mount the folder. And the optional third
   # argument is a set of non-required options.
   # config.vm.synced_folder "../data", "/vagrant_data"
-  config.vm.synced_folder "D:/workspace/symfony_sample", "/var/www/symfony_sample"
+  config.vm.synced_folder "D:/workspace/jobeet", "/var/www/jobeet"
 
   # Provider-specific configuration so you can fine-tune various
   # backing providers for Vagrant. These expose provider-specific options.
@@ -72,10 +72,10 @@ Vagrant.configure("2") do |config|
   # SHELL
   config.vm.provision "shell", inline: <<-SHELL
       sleep 10
-      sudo sh /home/vagrant/shell/sfVhost.sh 'symfony_sample'
+      sudo sh /home/vagrant/shell/sfVhost.sh 'jobeet'
       sudo /etc/init.d/apache2 restart
       mysql -u root -p123 << EOF
-      CREATE DATABASE IF NOT EXISTS symfony_sample;
+      CREATE DATABASE IF NOT EXISTS jobeet;
 EOF
   SHELL
 end
