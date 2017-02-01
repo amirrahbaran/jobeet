@@ -14,9 +14,9 @@ app/phpunit.xml
 phpunit.xml
 
 # Build data
+.vagrant
 .idea
 .idea/*
-.vagrant
 .idea/deployment.xml
 .idea/modules.xml
 .idea/symfony_sample.xml
@@ -25,7 +25,3 @@ phpunit.xml
 apps/frontend/i18n/
 apps/frontend/modules/
 plugins/
-test/functional/
-test/unit/
-web/images/
-web/js/
