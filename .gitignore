@@ -25,3 +25,5 @@ phpunit.xml
 apps/frontend/i18n/
 apps/frontend/modules/
 plugins/
+!/web/js/
+!/web/images/
