@@ -3,12 +3,13 @@
         "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
+    <meta charset="UTF-8">
     <title>
         <?php if (!include_slot('title')): ?>
             Jobeet - Your best job board
         <?php endif ?>
     </title>
-    <link rel="shortcut icon" href="/web/favicon.ico" />
+    <link rel="shortcut icon" href="/favicon.ico" />
     <?php include_javascripts() ?>
     <?php include_stylesheets() ?>
 </head>
@@ -64,9 +65,9 @@
     <div id="footer">
         <div class="content">
           <span class="symfony">
-            <img src="/legacy/images/jobeet-mini.png" />
+            <img src="/images/jobeet-mini.png" />
             powered by <a href="/">
-            <img src="/legacy/images/symfony.gif" alt="symfony framework" />
+            <img src="/images/symfony.gif" alt="symfony framework" />
             </a>
           </span>
             <ul>

@@ -49,7 +49,7 @@ php symfony doctrine:build --model
 #***********************************************************************
 
 #***********************************************************************
-# generates SQL statements in the data/sql/ directory, optimized for
+# To generate SQL statements in the data/sql/ directory, optimized for
 # the database engine we have configured:
 php symfony doctrine:build --sql
 #***********************************************************************
