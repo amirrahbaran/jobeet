@@ -15,4 +15,7 @@
             </tr>
         <?php endforeach ?>
     </table>
+    <div style="padding: 30px 15px">
+        <a href="<?php echo url_for('job/new') ?>">New</a>
+    </div>
 </div>

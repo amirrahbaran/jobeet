@@ -35,7 +35,7 @@
         <small>posted on <?php echo $job->getDateTimeObject('created_at')->format('m/d/Y') ?></small>
     </div>
 
-    <div style="padding: 20px 0">
+    <div style="padding: 20px 10px">
         <a href="<?php echo url_for('job/edit?id='.$job->getId()) ?>">
             Edit
         </a>
