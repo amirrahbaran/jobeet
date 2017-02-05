@@ -12,7 +12,7 @@
             </div>
 
             <table class="jobs">
-                <?php foreach ($category->getActiveJobs() as $i => $job): ?>
+                <?php foreach ($category->getActiveJobs(sfConfig::get('app_max_jobs_on_homepage')) as $i => $job): ?>
                     <tr class="<?php echo fmod($i, 2) ? 'even' : 'odd' ?>">
                         <td class="location">
                             <?php echo $job->getLocation() ?>
