@@ -18,5 +18,5 @@ log
 #web/uploads/
 
 # Assets managed by Bower
-lib/vendor
+#lib/vendor
 
