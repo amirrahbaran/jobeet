@@ -13,3 +13,4 @@ class jobActions extends sfActions
         $this->job = $this->getRoute()->getObject();
     }
 }
+

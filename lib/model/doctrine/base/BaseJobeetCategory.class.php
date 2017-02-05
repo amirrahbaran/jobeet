@@ -54,6 +54,13 @@ abstract class BaseJobeetCategory extends sfDoctrineRecord
              'foreign' => 'category_id'));
 
         $timestampable0 = new Doctrine_Template_Timestampable();
+        $sluggable0 = new Doctrine_Template_Sluggable(array(
+             'fields' => 
+             array(
+              0 => 'name',
+             ),
+             ));
         $this->actAs($timestampable0);
+        $this->actAs($sluggable0);
     }
 }

@@ -20,7 +20,7 @@ JobeetJob:
     is_activated: true
     token:        job_sensio_labs
     email:        job@example.com
-    expires_at:   '2017-03-01 00:00:00'
+    expires_at:   '2017-10-10'
 
   job_extreme_sensio:
     JobeetCategory:  design
@@ -46,7 +46,7 @@ JobeetJob:
     is_activated: true
     token:        job_extreme_sensio
     email:        job@example.com
-    expires_at:   '2017-02-20 00:00:00'
+    expires_at:   '2017-10-10'
 
   expired_job:
     JobeetCategory: programming
@@ -60,3 +60,20 @@ JobeetJob:
     created_at:     '2005-12-01 00:00:00'
     token:          job_expired
     email:          job@example.com
+
+# Starts at the beginning of the line (no whitespace before)
+<?php for ($i = 100; $i <= 130; $i++): ?>
+  job_<?php echo $i ?>:
+    JobeetCategory: programming
+    company:      Company <?php echo $i."\n" ?>
+    position:     Web Developer
+    location:     Paris, France
+    description:  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+    how_to_apply: |
+      Send your resume to lorem.ipsum [at] company_<?php echo $i ?>.sit
+    is_public:    true
+    is_activated: true
+    token:        job_<?php echo $i."\n" ?>
+    email:        job@example.com
+
+<?php endfor ?>
