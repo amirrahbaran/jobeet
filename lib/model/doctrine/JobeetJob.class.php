@@ -12,6 +12,16 @@
  */
 class JobeetJob extends BaseJobeetJob
 {
+    public function save(Doctrine_Connection $conn = null)
+    {
+        if ($this->isNew() && !$this->getExpiresAt()) {
+            $now = $this->getCreatedAt() ? $this->getDateTimeObject('created_at')->format('U') : time();
+            $this->setExpiresAt(date('Y-m-d H:i:s', $now + 86400 * 30));
+        }
+
+        return parent::save($conn);
+    }
+
     public function __toString()
     {
         return sprintf('%s at %s (%s)', $this->getPosition(), $this->getCompany(), $this->getLocation());
